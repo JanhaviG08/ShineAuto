@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔧 Shine Auto 🚗</title>
+  <link rel="shortcut icon" href="/public/img/taxi.png" type="image/png">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/escpos-js@^0.5.0/dist/escpos.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+
+
+
+</head>
+
+<body>
+  <header class="top-bar">
+    <div class="container">
+      <div class="center-name">
+        <h1>Shine<span> Auto</span></h1>
+      </div>
+      <div class="opening-hours">
+        <h3>Opening Hours</h3>
+        <p>Mon - Fri, 9:00 AM - 8:00 PM</p>
+      </div>
+      <div class="contact-info">
+        <h3>Call Us</h3>
+        <p>+0231 629941</p>
+      </div>
+    </div>
+  </header>
+
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="/home"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="/appointment"> <i class="fas fa-calendar-alt"></i>  Schedule Appointment</a></li>
+          <li><a href="#ourservices"><i class="fas fa-calendar-plus"></i> Book For A Service</a></li>
+          <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="#services"><i class="fas fa-tools"></i> Our Services</a></li>
+          <li><a href="/viewSales"><i class="fas fa-chart-bar"></i> View Sales</a></li>
+          <li><a href="/viewPending"><i class="fas fa-list-alt"></i> Pending List</a></li>
+          <li><a href="/salesOverview"><i class="fas fa-chart-line"></i> Sales Overview</a></li>
+          <li><a class="btn" href="/cart"><i class="fas fa-shopping-cart"></i> Go to Cart</a></li>
+          <li><a class="btn" href="/logout"><i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Carousel Start -->
+  <section class="carousel">
+    <div id="#home">
+      <div class="carousel-item" data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell">
+          <div class="carousel-img">
+            <img src="img/carousel-2.jpg" alt="">
+          </div>
+          <div class="carousel-text">
+            <h3>Detailing</h3>
+            <h1>Keep your Car Newer</h1>
+            <p>
+              Enhance your car's appearance and protect its value with professional detailing services, keeping it
+              looking newer for longer</p>
+          </div>
+        </div>
+        <!-- Repeat for other carousel cells -->
+        <div class="carousel-cell">
+          <div class="carousel-img">
+            <img src="img/carousel-2.jpg" alt="">
+          </div>
+          <div class="carousel-text">
+            <h3>Washing</h3>
+            <h1>Exterior & Interior Washing</h1>
+            <p>
+              Comprehensive exterior and interior washing services to restore the cleanliness and shine of your vehicle
+            </p>
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <div class="carousel-img">
+            <img src="img/carousel-2.jpg" alt="">
+          </div>
+          <div class="carousel-text">
+            <h3>Wheels</h3>
+            <h1>Quality service for you</h1>
+            <p>Specialized care for your wheels, ensuring they remain clean, polished, and free from dirt and grime
+              buildup</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel End -->
+
+
+
+
+  <section id="about">
+    <!-- Service Start -->
+    <div class="service">
+      <div class="container">
+        <div class="section-header text-center">
+          <p>What We Do?</p>
+          <h2>Premium Washing Services</h2>
+        </div>
+        <div class="row">
+          <div class="service-item">
+            <h3>Exterior Washing</h3>
+            <p> Ensure the exterior of your vehicle receives a thorough cleaning, removing dirt, grime, and other debris
+              to restore its shine and protect its paint</p>
+          </div>
+          <div class="service-item">
+            <h3>Interior Washing</h3>
+            <p>Treat your vehicle's interior to a thorough cleaning, addressing surfaces and areas often overlooked,
+              leaving it looking and smelling like new</p>
+          </div>
+          <div class="service-item">
+            <h3>Seats Washing</h3>
+            <p>Give your car seats the attention they deserve with a specialized cleaning process designed to remove
+              dirt, spills, and stains, rejuvenating their appearance and comfort</p>
+          </div>
+          <div class="service-item">
+            <h3>Window Wiping</h3>
+            <p>Enhance visibility and aesthetics by having your car's windows meticulously wiped and polished, ensuring
+              a streak-free finish for a clearer view of the road ahead</p>
+          </div>
+          <div class="service-item">
+            <h3>Wet Cleaning</h3>
+            <p>Experience a comprehensive cleaning solution that involves both interior and exterior washing techniques,
+              leaving your vehicle looking spotless and revitalized</p>
+          </div>
+          <div class="service-item">
+            <h3>Wheel Polishing</h3>
+            <p>Enhance the look of your wheels with our professional polishing service, removing brake dust and road
+              grime to reveal their original shine</p>
+          </div>
+          <div class="service-item">
+            <h3>Undercarriage Washing</h3>
+            <p>Preserve your vehicle's undercarriage and prevent corrosion with our thorough undercarriage washing
+              service, removing dirt, salt, and debris accumulated from the road.</p>
+          </div>
+          <div class="service-item">
+            <h3>Interior Vacuuming</h3>
+            <p>Maintain a clean and tidy interior with our thorough vacuuming service, which removes dirt, crumbs, and
+              debris from carpets, upholstery, and floor mats</p>
+          </div>
+          <div class="service-item">
+            <h3>Convertible Top Cleaning</h3>
+            <p> Preserve the beauty and functionality of your convertible top with our gentle cleaning service, which
+              removes dirt,and pollutants without causing damage.</p>
+          </div>
+          <div class="service-item">
+            <h3>Exterior Detailing</h3>
+            <p>Elevate the appearance of your vehicle with our exterior detailing service,which includes paint
+              correction, waxing, and polishing for a showroom-worthy shine.</p>
+          </div>
+          <div class="service-item">
+            <h3>Interior Detailing</h3>
+            <p>Experience the luxury of a pristine interior with our interior detailing service, featuring deep cleaning
+              of all surfaces, leather conditioning, and odor elimination.</p>
+          </div>
+          <div class="service-item">
+            <h3>Clay Bar Treatment</h3>
+            <p>Revitalize your vehicle's paint finish with our clay bar treatment, which safely removes embedded
+              contaminants, leaving the surface smooth and glossy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service End -->
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>Our Services</h2>
+      </div>
+      <div class="service-container">
+        <div class="service-box">
+          <img src="img/blog-1.jpg" alt="Exterior Car Wash">
+          <div class="service-info">
+            <h3>Seats Washing</h3>
+            <p> Upholstery renewal.</p>
+            <p>Rate: Rs 200/-</p>
+          </div>
+        </div>
+        <div class="service-box">
+          <img src="img/blog-2.jpg" alt="Interior Cleaning">
+          <div class="service-info">
+            <h3>Exterior Car Wash</h3>
+            <p>Refreshing exterior cleanse.</p>
+            <p>Rate: Rs 250/-</p>
+          </div>
+        </div>
+        <div class="service-box">
+          <img src="img/blog-3.jpg" alt="Waxing & Polishing">
+          <div class="service-info">
+            <h3>Waxing & Polishing</h3>
+            <p>Protective exterior shine.</p>
+            <p>Rate: Rs 500/-</p>
+          </div>
+        </div>
+        <div class="service-box">
+          <img src="img/Clean-auto-glass.jpg" alt="Waxing & Polishing">
+          <div class="service-info">
+            <h3>Window Wiping</h3>
+            <p>Crystal-clear visibility.</p>
+            <p>Rate: Rs 350/-</p>
+          </div>
+        </div>
+        <div class="service-box">
+          <img src="img/single.jpg" alt="Waxing & Polishing">
+          <div class="service-info">
+            <h3>Wet Cleaning</h3>
+            <p>Comprehensive vehicle rejuvenation.</p>
+            <p>Rate: Rs 150/-</p>
+          </div>
+        </div>
+        <div class="service-box">
+          <img src="img/blog-1.jpg" alt="Waxing & Polishing">
+          <div class="service-info">
+            <h3>Interior Washing</h3>
+            <p>Thorough cabin cleansing.</p>
+            <p>Rate: Rs 400/-</p>
+          </div>
+        </div>
+        <!-- Add more service boxes as needed -->
+      </div>
+    </div>
+  </section>
+
+  <section id="ourservices">
+    <div class="container">
+      <h2>Book For A Service</h2>
+      <form id="serviceForm" action="/form" method="POST">
+        <div class="control-group">
+          <select id="serviceType" name="vehicleType" class="form-control">
+            <option value="">Select Vehicle Type</option>
+            <option value="two-wheeler">Two-Wheeler</option>
+            <option value="four-wheeler">Four-wheeler</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <input type="text" id="customerName" name="customerName" class="form-control"
+            placeholder="Name of the Customer" required="required">
+        </div>
+        <div class="control-group">
+          <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="Phone Number"
+            required="required">
+        </div>
+        <div class="control-group">
+          <input type="text" id="vehicleDetails" name="vehicleDetails" class="form-control"
+            placeholder="Vehicle Details" required="required">
+        </div>
+        <div class="control-group">
+          <input type="text" id="numberPlate" name="numberPlate" class="form-control" placeholder="Number Plate"
+            required="required">
+        </div>
+
+
+        <div class="control-group">
+          <select id="serviceTypes" name="serviceType" class="form-control" required="required"
+            onchange="showSubServices()">
+            <option value="">Service Type</option>
+            <option value="detailing">Detailing</option>
+            <option value="washing">Washing</option>
+            <option value="wheels">Wheels</option>
+          </select>
+        </div>
+
+        <div id="subServices" style="display: none;">
+          <div class="control-group">
+            <select id="subService" name="subService" class="form-control" required="required">
+              <option value="">Sub Service</option>
+              <!-- Detailing sub-services -->
+              <optgroup label="Detailing">
+                <option value="Car Polish (One Step)">Car Polish (One Step)</option>
+                <option value="Car Polishing (Six Step)">Car Polishing (Six Step) </option>
+                <option value="Two Wheeler Polish">Two Wheeler Polish </option>
+                <option value="Interior Deep Clean With Wash">Interior Deep Clean Wash </option>
+                <option value="Windshield Polish">Windshield Polish </option>
+                <option value="Headlight Polish">Headlight Polish </option>
+                <option value="Cavity Cleaning">Cavity Cleaning </option>
+                <option value="Other">Other</option>
+              </optgroup>
+              <!-- Washing sub-services -->
+              <optgroup label="Washing">
+                <option value="Body Wash">Body Wash</option>
+                <option value="Full Servicing">Full Servicing </option>
+                <option value="Other Part Wash">Other Part Wash </option>
+                <option value="Only Water">Only Water Wash</option>
+                <option value="Two Wheeler Diesel Wash">Two Wheeler Diesel Wash </option>
+                <option value="Two Wheeler Foam Wash">Two Wheeler Foam Wash  </option>
+                <option value="Other">Other</option>
+            
+              </optgroup>
+              <!-- Wheels sub-services -->
+              <optgroup label="Wheels">
+                <option value=">Wheel Alignment">Wheel Alignment </option>
+                <option value="Wheel Balancing">Wheel Balancing </option>
+                <option value="Nitrogen Fill">Nitrogen Fill</option>
+                <option value="Nitrogen Checking">Nitrogen Checking </option>
+                <option value="Nitrogen Refilling">Nitrogen Refilling</option>
+                <option value="Rotation">Rotation </option>
+                <option value="Normal  Weight">Normal Weight </option>
+                <option value="Puncture">Puncture </option>
+                <option value="Sticker  Weight">Sticker Weight </option>
+                <option value="Tyre Flip">Tyre Flip </option>
+                <option value="Other">Other</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+        <div class="control-group">
+          <input type="number" id="amountToBePaid" name="amountToBePaid" class="form-control"
+            placeholder="Enter the Amount /-" required="required">
+        </div>
+        <div class="control-group">
+          <select id="paymentStatus" name="paymentStatus" class="form-control" required="required"
+            onchange="togglePaymentMethodQuestion()">
+            <option value="">Payment Status</option>
+            <option value="paid">Paid</option>
+            <option value="unpaid">Unpaid</option>
+          </select>
+        </div>
+        <div class="control-group" id="paymentMethodQuestion" style="display: none;">
+          <select id="paymentType" name="paymentType" class="form-control">
+            <option value="">Payment Method</option>
+            <option value="cash">Cash</option>
+            <option value="online">Online</option>
+          </select>
+        </div>
+
+        <!-- Hidden input field to store the current time and date -->
+        <input type="hidden" id="submitDateTime" name="submitDateTime">
+
+        <div class="control-group">
+          <button id="addToCartBtn" class="btn btn-custom" type="submit">Add to Cart</button>
+          <button id="downloadReceiptBtn" class="btn btn-custom" type="button">Download Receipt</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <a href="#" class="back-to-top" id="backToTopBtn" title="Go to top"><img src="img/top.png" alt="Back-to-Top"></a>
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Shine Auto</p>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+
+
+  <script>
+    
+
+    function showSubServices() {
+      var serviceType = document.getElementById("serviceType").value;
+      var subServicesDiv = document.getElementById("subServices");
+
+      if (serviceType !== "") {
+        subServicesDiv.style.display = "block";
+      } else {
+        subServicesDiv.style.display = "none";
+      }
+    }
+    // Function to toggle the display of the payment method question
+    function togglePaymentMethodQuestion() {
+      const paymentStatus = document.getElementById("paymentStatus").value;
+      const paymentMethodQuestion = document.getElementById("paymentMethodQuestion");
+      if (paymentStatus === "paid") {
+        paymentMethodQuestion.style.display = "block";
+      } else {
+        paymentMethodQuestion.style.display = "none";
+      }
+    }
+    // Redirect to signup page when accessing the root route
+    if (window.location.pathname === '/') {
+      window.location.href = "/signup";
+    }
+    window.addEventListener('scroll', function () {
+      var backToTopButton = document.getElementById('backToTopBtn');
+      if (window.pageYOffset > 300) { // Adjust as needed
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
+
+    document.getElementById('backToTopBtn').addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+  <div class="control-group">
+</body>
+
+</html>

@@ -1,0 +1,794 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    margin:auto;
+    padding: 20px 0;
+  }
+
+
+  /* Styling for the top bar */
+.top-bar {
+  background-color: #821c1c;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content:space-around;
+}
+
+.center-name h1 {
+  font-size: 2em;
+}
+
+.center-name h1 span {
+  color: #436be3; 
+}
+
+.center-name h1 {
+  color: #ffffff; 
+}
+
+.top-bar p {
+  margin: 0;
+}
+
+.center-name {
+  font-size: 1.2em;
+}
+
+.opening-hours,
+.contact-info {
+  font-size: 0.9em;
+}
+
+  
+  header {
+    background: #0f3761;
+    color: #ffffff;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 16px;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease;
+  }
+
+  nav ul li a[href="/home"]:hover {
+    background-color: #18406b;
+  }
+  
+  nav ul li a[href="/home"]:hover {
+    background-color: #18406b;
+  }
+  
+  nav ul li a[href="/appointment"]:hover {
+    background-color: #18406b;
+  }
+  
+  nav ul li a[href="#services"]:hover {
+    background-color: #18406b;
+  }
+   
+  nav ul li a[href="index.html#services"]:hover {
+    background-color: #18406b;
+  }
+  
+  nav ul li a[href="#about"]:hover {
+    background-color: #18406b; 
+  }
+  nav ul li a[href="index.html#about"]:hover {
+    background-color: #18406b; 
+  }
+  
+  nav ul li a[href="#ourservices"]:hover {
+    background-color: #18406b; 
+  }
+  nav ul li a[href="index.html#ourservices"]:hover {
+    background-color: #18406b; 
+  }
+  
+  nav ul li a[href="/viewSales"]:hover {
+    background-color: #18406b; 
+  }
+  nav ul li a[href="index.html#viewSales"]:hover {
+    background-color: #18406b; 
+  }
+  
+  nav ul li a[href="/viewPending"]:hover {
+    background-color: #18406b; 
+  }
+  nav ul li a[href="/salesOverview"]:hover {
+    background-color: #18406b; 
+  }
+  nav ul li a[href="index.html#viewRecords"]:hover {
+    background-color: #18406b; 
+  }
+ 
+/* Add hover effect to the "Back to Home" link */
+.btn {
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3875b5; 
+}
+
+
+  
+  section {
+    padding: 20px 0;
+  }
+  
+  section h2 {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background: #0f2567;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+/* Form styling */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.container h2{
+  color: #821c1c;
+}
+.control-group {
+  margin-bottom: 20px;
+}
+
+
+.form-control {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  width: 80%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.btn {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom {
+  background-color: #154a83;
+  color: #ffffff;
+}
+
+.btn-custom:hover {
+  background-color: #047dff;
+}
+
+/* Service section */
+.service {
+  padding: 50px 0;
+}
+
+.service .section-header p {
+  font-size: 18px;
+  color: #821c1c;
+  margin-bottom: 10px;
+}
+
+.service .section-header h2 {
+  font-size: 36px;
+  color: #821c1c;
+}
+
+.service .service-item {
+  text-align:justify;
+  margin-bottom: 30px;
+}
+
+.service .service-item i {
+  font-size: 48px;
+  color: #821c1c;
+}
+
+.service .service-item h4 {
+  font-size: 24px;
+  color: #1037ab;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.service .service-item p {
+  font-size: 16px;
+  color: #666;
+}
+
+
+/* Base CSS for Service Containers */
+.service {
+  padding: 50px 0;
+}
+
+.service-item {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  width: calc(33.333% - 40px); 
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.service-item h3 {
+  font-size: 20px;
+}
+
+.service-item p {
+  font-size: 16px;
+}
+
+/* Responsive CSS */
+@media only screen and (max-width: 767px) {
+  .service-item {
+      width: calc(50% - 40px); /* Display two items per row on small screens */
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .service-item {
+      width: 100%; /* Display one item per row on extra small screens */
+  }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .service .service-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service .service-item i {
+    font-size: 36px;
+  }
+
+  .service .service-item h3 {
+    font-size: 20px;
+  }
+
+  .service .service-item p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .service .section-header h2 {
+    font-size: 28px;
+  }
+
+  .service .service-item i {
+    font-size: 24px;
+  }
+
+  .service .service-item h3 {
+    font-size: 18px;
+  }
+
+  .service .service-item p {
+    font-size: 12px;
+  }
+}
+
+
+/* our services */
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1000px; 
+}
+
+/* Box styles */
+.service-box {
+  flex: 0 1 calc(30% - 20px); 
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Image styles */
+.service-box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Info styles */
+.service-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-info p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .service-box {
+      flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .service-box {
+      flex-basis: calc(100% - 20px);
+  }
+}
+
+
+/* carousel css */
+    .carousel {
+          position: relative;
+          width: 100%;
+          min-height: 400px;
+          background: #ffffff;
+          margin-bottom: 45px;
+          padding: 0;
+      }
+
+
+    .carousel-cell .carousel-img {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        text-align: right;
+        overflow: hidden;
+    }
+    
+    .carousel-cell .carousel-img::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .5);
+        z-index: 1;
+    }
+    
+    .carousel .carousel-img img {
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+    
+
+      .carousel-text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          color: black; 
+          z-index: 2; 
+          max-width: 80%; 
+      }
+
+      .carousel-text h3{
+        color: #E81C2E;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+      }
+      .carousel-text h1{
+        color: #ffffff;
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      .carousel-text p{
+        max-width: 500px;
+        color: #ffffff;
+        font-size: 18px;
+        margin-bottom: 40px;
+      }
+      
+
+      /* Style for navigation arrows */
+      .flickity-prev-next-button {
+          width: 40px; 
+          height: 40px; 
+          background: black; 
+          opacity: 0.7;
+      }
+
+      .flickity-prev-next-button:hover {
+          opacity: 1;
+      }
+
+      .flickity-prev-next-button svg {
+          fill: white; 
+      }
+
+      .flickity-prev-next-button.previous { left: 10px; } 
+      .flickity-prev-next-button.next { right: 10px; } 
+
+      /* Responsive styles */
+      @media (max-width: 768px) {
+          .carousel-text {
+              font-size: 14px; 
+          }
+      }
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .top-bar .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .center-name h1 {
+    font-size: 1.5em;
+  }
+
+  .cart-button {
+    position: static;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .center-name h1 {
+    font-size: 1.2em;
+  }
+
+  .opening-hours,
+  .contact-info {
+    font-size: 0.8em;
+  }
+}
+  
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px; 
+  height: 40px; 
+  z-index: 1000;
+}
+
+.back-to-top img {
+  width: 100%; 
+  height: 100%; 
+  border-radius: 50%; 
+  background-color: #007bff; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top img:hover {
+  background-color: #0056b3; 
+}
+
+/* shopping cart css */
+
+/* Style the cart table */
+#cartTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Style the table header */
+#cartTable th {
+  background-color: #f2f2f2;
+  padding: 8px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style the table rows */
+#cartTable td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Add some padding to the last cell of each row */
+#cartTable td:last-child {
+  padding-right: 20px;
+}
+
+/* Style the sales table */
+#salesTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Style the table header */
+#salesTable th {
+  background-color: #f2f2f2;
+  padding: 8px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style the table rows */
+#salesTable td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Add some padding to the last cell of each row */
+#salesTable td:last-child {
+  padding-right: 20px;
+}
+
+.button-container {
+  display: flex; /* Use flexbox to align buttons horizontally */
+}
+
+.button-container {
+  display: inline-block;
+}
+
+/* Style the delete button */
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+/* Style the print button */
+.btn-print {
+  margin-bottom: 5px;
+  background-color: #185b82;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-print:hover {
+  background-color: #2878a9;
+}
+
+/* CSS for form button */
+.btn-edit {
+  background-color: #007bff; 
+  color: #fff; 
+  padding: 8px 15px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer;
+}
+
+/* Hover effect */
+.btn-edit:hover {
+  background-color: #0056b3; 
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  #cartTable th {
+    display: none;
+  }
+  
+  /* Display table data in block format on small screens */
+  #cartTable td {
+    display: block;
+    border: none;
+    padding: 10px 0;
+  }
+  
+  #cartTable tr {
+    margin-bottom: 20px;
+    border: 1px solid #ddd; 
+  }
+}
+
+/* Specific Appointment Page Styles */
+.appointment-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Appointment Page Specific Styles */
+.appointment-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.appointment-container h1 {
+  color: #821c1c;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.appointment-form {
+  padding: 20px;
+}
+
+.form-section {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.price-display {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #821c1c;
+}
+
+.btn-submit {
+  background-color: #821c1c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #a82323;
+}
+
+.appointment-page h1 {
+  color: #821c1c;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.appointment-form {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.form-section {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.price-display {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #821c1c;
+}

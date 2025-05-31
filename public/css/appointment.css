@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  margin:auto;
+  padding: 20px 0;
+}
+
+ /* Styling for the top bar */
+ .top-bar {
+  background-color: #821c1c;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content:space-around;
+}
+
+.center-name h1 {
+  font-size: 2em;
+}
+
+.center-name h1 span {
+  color: #436be3; 
+}
+
+.center-name h1 {
+  color: #ffffff; 
+}
+
+.top-bar p {
+  margin: 0;
+}
+
+.center-name {
+  font-size: 1.2em;
+}
+
+.opening-hours,
+.contact-info {
+  font-size: 0.9em;
+}
+
+  
+  header {
+    background: #0f3761;
+    color: #ffffff;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 16px;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease;
+  }
+
+  nav ul li a[href="/home"]:hover {
+    background-color: #18406b;
+  }
+  
+  nav ul li a[href="/home"]:hover {
+    background-color: #18406b;
+  }
+  
+  nav ul li a[href="/appointment"]:hover {
+    background-color: #18406b;
+  }
+  
+  nav ul li a[href="#services"]:hover {
+    background-color: #18406b;
+  }
+   
+  nav ul li a[href="index.html#services"]:hover {
+    background-color: #18406b;
+  }
+  
+  nav ul li a[href="#about"]:hover {
+    background-color: #18406b; 
+  }
+  nav ul li a[href="index.html#about"]:hover {
+    background-color: #18406b; 
+  }
+  
+  nav ul li a[href="#ourservices"]:hover {
+    background-color: #18406b; 
+  }
+  nav ul li a[href="index.html#ourservices"]:hover {
+    background-color: #18406b; 
+  }
+  
+  nav ul li a[href="/viewSales"]:hover {
+    background-color: #18406b; 
+  }
+  nav ul li a[href="index.html#viewSales"]:hover {
+    background-color: #18406b; 
+  }
+  
+  nav ul li a[href="/viewPending"]:hover {
+    background-color: #18406b; 
+  }
+  nav ul li a[href="/salesOverview"]:hover {
+    background-color: #18406b; 
+  }
+  nav ul li a[href="index.html#viewRecords"]:hover {
+    background-color: #18406b; 
+  }
+ 
+/* Add hover effect to the "Back to Home" link */
+.btn {
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3875b5; 
+}
+
+
+  
+  section {
+    padding: 20px 0;
+  }
+  
+  section h2 {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background: #0f2567;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
+/* Base Container Styles */
+.appointment-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Header Styles */
+  .appointment-container h1 {
+    color: #821c1c;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+  }
+  
+  /* Form Styles */
+  .appointment-form {
+    padding: 20px;
+  }
+  
+  .form-section {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Price Display */
+  .price-display {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+    color: #821c1c;
+  }
+  
+  /* Submit Button */
+  .btn-submit {
+    background-color: #821c1c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-submit:hover {
+    background-color: #a82323;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .appointment-container {
+      padding: 1rem;
+      margin: 1rem;
+    }
+    
+    .appointment-container h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .no-appointments {
+    text-align: center;
+    color: #666;
+    padding: 20px;
+  }
+  
+  .appointment-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+  .appointment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .appointment-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .status-badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  
+  .status-confirmed {
+    background-color: #e6f7e6;
+    color: #2e7d32;
+  }
+  
+  .status-pending {
+    background-color: #fff8e1;
+    color: #ff8f00;
+  }
+  
+  .appointment-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+  
+  .appointment-details p {
+    margin: 0.25rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .appointment-details i {
+    width: 1rem;
+    color: #555;
+  }
+  
+  .cancel-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #e53935;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .cancel-btn:hover {
+    color: #c62828;
+  }
+
+
+
+.appointment-card:hover {
+  transform: translateY(-2px);
+}
+
+.appointment-card h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.appointment-card p {
+  margin: 0.5rem 0;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Status indicators */
+.status-confirmed { color: #27ae60; }
+.status-pending { color: #f39c12; }
+.status-cancelled { color: #e74c3c; }
+
+/* Form improvements */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.price-display {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.btn-submit {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: #2980b9;
+}

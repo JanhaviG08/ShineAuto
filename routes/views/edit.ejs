@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Form</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .btn-submit {
+  background-color: #154a83; 
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  margin-top: 20px; 
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;  
+}
+  </style>
+</head>
+<body>
+  
+  <header class="top-bar">
+    <div class="container">
+      <div class="center-name">
+        <h1>Shine<span> Auto</span></h1>
+      </div>
+  </header>
+
+  <section id="editForm">
+    <div class="container">
+      <h2>Edit Form</h2>
+      <div>
+        <h3>Editing</h3>
+        <%= formData.customerName %> - <%= formData.vehicleDetails %>
+      </div>
+      <!-- Replace the form fields below with the actual fields you want to edit -->
+      <form method="POST" action="/update/<%= formData._id %>?method=PUT">
+        <div class="control-group">
+          <label for="paymentStatus">Payment Status:</label>
+          <select id="paymentStatus" name="paymentStatus" class="form-control">
+            <option value="">Select Payment Status</option>
+            <option value="paid" <% if (formData.paymentStatus === 'paid') { %>selected<% } %>>Paid</option>
+            <option value="unpaid" <% if (formData.paymentStatus === 'unpaid') { %>selected<% } %>>Unpaid</option>
+          </select>
+        </div>
+        <br>
+        <div class="control-group">
+          <label for="paymentType">Payment Type:</label>
+          <select id="paymentType" name="paymentType" class="form-control">
+            <option value="">Select Payment Type</option>
+            <option value="cash" <% if (formData.paymentType === 'cash') { %>selected<% } %>>Cash</option>
+            <option value="online" <% if (formData.paymentType === 'online') { %>selected<% } %>>Online</option>
+          </select>
+        </div>
+        <br>        
+        <!-- Add more form fields for other data to be edited -->
+        <button type="submit" class="btn-submit">Update</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Shine Auto</p>
+    </div>
+  </footer>
+  <a href="#" class="back-to-top" id="backToTopBtn" title="Go to top"><img src="img/top.png" alt="Back-to-Top"></a>
+  <script src="/script.js"></script>
+</body>
+</html>

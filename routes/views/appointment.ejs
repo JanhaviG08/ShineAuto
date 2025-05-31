@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Schedule Appointment | Shine Auto</title>
+  <link rel="stylesheet" href="/css/appointment.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+  <header class="top-bar">
+    <div class="container">
+      <div class="center-name">
+        <h1>Shine<span> Auto</span></h1>
+      </div>
+      <div class="opening-hours">
+        <h3>Opening Hours</h3>
+        <p>Mon - Fri, 9:00 AM - 8:00 PM</p>
+      </div>
+      <div class="contact-info">
+        <h3>Call Us</h3>
+        <p>+0231 629941</p>
+      </div>
+    </div>
+  </header>
+
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="/home"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="/appointment"> <i class="fas fa-calendar-alt"></i>  Schedule Appointment</a></li>
+          <li><a href="/viewSales"><i class="fas fa-chart-bar"></i> View Sales</a></li>
+          <li><a href="/viewPending"><i class="fas fa-list-alt"></i> Pending List</a></li>
+          <li><a href="/salesOverview"><i class="fas fa-chart-line"></i> Sales Overview</a></li>
+          <li><a class="btn" href="/cart"><i class="fas fa-shopping-cart"></i> Go to Cart</a></li>
+          <li><a class="btn" href="/home">← Back</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container">
+    <div class="appointment-container"> 
+    <h1>Schedule Your Service</h1>
+    <form id="appointmentForm" class="appointment-form">
+      <!-- Customer Information -->
+      <div class="form-section">
+        <h3>Your Information</h3>
+        <div class="form-group">
+          <label for="customerName">Full Name* </label>
+          <input type="text" id="customerName" name="customerName" required>
+        </div>
+        <div class="form-group">
+          <label for="phoneNumber">Phone Number* </label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        </div>
+      </div>
+
+      <!-- Vehicle Information -->
+      <div class="form-section">
+        <h3>Vehicle Details</h3>
+        <div class="form-group">
+          <label for="vehicleType">Vehicle Type* </label>
+          <select id="vehicleType" name="vehicleType" required>
+            <option value="">Select Vehicle</option>
+            <option value="car">Car (₹300-500)</option>
+            <option value="suv">SUV (₹400-750)</option>
+            <option value="truck">Truck (₹500-1000)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="vehicleDetails">Vehicle Model/Details</label>
+          <input type="text" id="vehicleDetails" name="vehicleDetails">
+        </div>
+       <!-- Add this to your Vehicle Details section -->
+<div class="form-group">
+  <label for="numberPlate">Vehicle Registration Number*</label>
+  <input 
+    type="text" 
+    id="numberPlate" 
+    name="numberPlate" 
+    pattern="[A-Za-z]{2}[ -]?[0-9]{1,2}[ -]?[A-Za-z]{1,3}[ -]?[0-9]{4}"
+    title="Format: MH-09-AB-1234"
+    required
+  >
+</div>
+      </div>
+
+      <!-- Service Selection -->
+      <div class="form-section">
+        <h3>Service Details</h3>
+        <div class="form-group">
+          <label for="serviceType">Service Type* </label>
+          <select id="serviceType" name="serviceType" required>
+            <option value="">Select Service</option>
+            <option value="washing">Basic Wash</option>
+            <option value="detailing">Full Detailing</option>
+            <option value="polishing">Polishing</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="appointmentDate">Preferred Date* </label>
+          <input type="text" id="appointmentDate" placeholder="Select date" readonly>
+        </div>
+        <div class="form-group">
+          <label for="appointmentSlot">Time Slot* </label>
+          <select id="appointmentSlot" name="appointmentSlot" disabled required>
+            <option value="">Select date first</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Price Display -->
+      <div class="price-display">
+        Estimated Price: <span id="estimatedPrice">-</span>
+      </div>
+
+      <button type="submit" class="btn-submit">Schedule Appointment</button>
+    </form>
+    </div>
+  </section>
+
+  <section class="upcoming-appointments">
+    <h2><i class="fas fa-calendar-alt"></i> Scheduled Appointments</h2>
+    <div id="appointmentsContainer">
+      <!-- Dynamic content will load here -->
+    </div>
+  </section>
+  <style>
+    .upcoming-appointments {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+    }
+    .appointment-card {
+      background: white;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .status-confirmed { color: green; }
+  .status-pending { color: orange; }
+  .status-cancelled { color: red; }
+  </style>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Shine Auto</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="/js/appointment.js"></script>
+</body>
+</html>
